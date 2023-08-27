@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Ajay Web Developer-Portfolio</title>
+    <link rel="stylesheet" href="External.css" />
+    <script
+      src="https://kit.fontawesome.com/4865a4c4c3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="Images/lgo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#contactinfo">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Web Developer</p>
+          <h1>Hii,I'm <span class="Name">Ajay Kumar</span></h1>
+        </div>
+      </div>
+    </div>
+    <!----about-->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="Images/User.jpg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="Sub-Title">About Me</h1>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae,
+              quibusdam explicabo molestiae beatae minima voluptatibus hic
+              consequuntur sunt neque necessitatibus? Debitis accusantium,
+              molestiae vitae aspernatur at unde sequi ipsa! Cumque.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-link active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-link" onclick="opentab('courses')">Courses</p>
+              <p class="tab-link" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Web Developer</span><br />Web app Development</li>
+                <li><span>Java Developer</span><br />Java Development</li>
+                <li><span>UI/UX</span><br />Design Web/App interface</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="courses">
+              <ul>
+                <li>
+                  <span>Aug-2022</span><br />Web Development training using Java
+                  at Solitaire Infosys,Mohali
+                </li>
+                <li>
+                  <span>Mar-2022</span><br />Game Development 3D from Coursera
+                </li>
+                <li>
+                  <span>Nov-2022</span><br />Front End Development from Great
+                  Learning
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2020 to present</span><br />Pursuing B.TECH in Computer
+                  Science and Engeneering from MIMIT MALOUT(PTU JALANDHAR)
+                </li>
+                <li>
+                  <span>2018-2020</span><br />Senior Secondary Education from
+                  Sen. Sec.Residential School For Meritorious Students from
+                  Bathinda
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----------------services---------->
+    <div id="services">
+      <div class="container">
+        <h1 class="Sub-Title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Developer</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Dignissimos repudiandae qui autem ad doloremque aliquid quo eius
+              voluptatum iure nesciunt suscipit sed molestias, animi ab eaque
+              perspiciatis sapiente id asperiores?
+            </p>
+            <a href="#">Show More</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-java" style="color: #ffffff"></i>
+            <h2>Java Developer</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Dignissimos repudiandae qui autem ad doloremque aliquid quo eius
+              voluptatum iure nesciunt suscipit sed molestias, animi ab eaque
+              perspiciatis sapiente id asperiores?
+            </p>
+            <a href="#">Show More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI/UX</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Dignissimos repudiandae qui autem ad doloremque aliquid quo eius
+              voluptatum iure nesciunt suscipit sed molestias, animi ab eaque
+              perspiciatis sapiente id asperiores?
+            </p>
+            <a href="#">Show More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-------------portfolio------------------------>
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="Sub-Title">My Projects</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="Images/nwi.png" />
+            <div class="layer">
+              <h3>NewsApi</h3>
+              <p>
+                The News API is a powerful and versatile<br />
+                tool that provides up-to-date collection <br />of news articles
+                and information from <br />around the world.
+              </p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="Images/BDL.png" />
+            <div class="layer">
+              <h3>Blood Donor Locator</h3>
+              <p>
+                Find Lifesaving Heroes Near You.The Blood <br />Donor Locator is
+                a powerful and user-friendly<br />tool designed to connect
+                individuals in need<br />
+                of blood donations.
+              </p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="Images/tul.png" />
+            <div class="layer">
+              <h3>Text-Utils</h3>
+              <p>
+                Your All-in-One Text Manipulation Tool.<br />This versatile app
+                offers a range of tools to<br />
+                enhance your text processing experience.
+              </p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">Show More</a>
+      </div>
+    </div>
+    <!----------------Contact------------------->
+    <div id="contactinfo">
+      <div class="conatiner">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i>ajaynnokhwal99@gmail.com</p>
+            <p><i class="fa-solid fa-id-badge"></i>8839335518</p>
+            <div class="social">
+              <a href="https://www.instagram.com/ajay_kumar447/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://www.facebook.com/profile.php?id=100015158568692"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/ajay-kumar-7812ab1b0/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+            <a href="Images/Mycv.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Enter Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright © All Right Reserved.Made with
+          <i class="fa-solid fa-heart" style="color: #fb0404"></i> by Ajay Kumar
+        </p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-link");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-300px";
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbyGVymY7FPP2ZXK3m4lyvhT0aFU2_15or4v7cUSaA5FnWGqeZttvODcxX_wxIN-o0wmNg/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById(msg);
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+              msg.innerHTML=''
+            },5000)
+            form.reset()
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
